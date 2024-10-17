@@ -9,7 +9,8 @@ public class NumberFeature {
         Scanner in = new Scanner(System.in);
         inputNumber = in.nextInt();
         // 你的代码逻辑
-
+        // test git
+        //
         System.out.println(result);
     }
 }
