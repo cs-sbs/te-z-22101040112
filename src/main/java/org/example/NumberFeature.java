@@ -11,6 +11,20 @@ public class NumberFeature {
         // 你的代码逻辑
         // test git
         //
-        System.out.println(result);
+        int weishu=1;
+        int zishu=1;
+        result=0;
+        while (inputNumber>0) {
+           int n=inputNumber%10;
+           if((n%2==0 && weishu%2==0)||(n%2!=0 && weishu%2!=0)) {
+               result+=zishu;
+           }
+           inputNumber=inputNumber/10;
+           weishu++;
+           zishu*=2;
+
+        }
+        if (result==0){System.out.println("您输入的数字有误，请输入正数");}
+        else System.out.println(result);
     }
 }

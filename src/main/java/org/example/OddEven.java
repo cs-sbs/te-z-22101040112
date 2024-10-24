@@ -7,15 +7,16 @@ public class OddEven {
         int number;
         int countOdd = 0;
         int countEven = 0;
+        System.out.println("请输入数字，-1结束程序");
         Scanner in = new Scanner(System.in); // 数字用空格或换行隔开，每次读入一个，直到输入‘-1’
         do{
             number = in.nextInt();
             if(number != -1)
             {
                 if (number % 2 == 0) {
-                    countEven += 1;
+                    countEven ++;
                 } else {
-                    countOdd += 1;
+                    countOdd ++;
                 }
             }
         }while(number != -1); // 理解do while和while循环的区别
